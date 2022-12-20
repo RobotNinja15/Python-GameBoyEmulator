@@ -19,6 +19,6 @@ class Audio:
         sample_rate = 44100
         num_samples = int(duration * sample_rate)
         data = (np.sin(2 * np.pi * np.arange(num_samples) * frequency / sample_rate)).astype(np.float32)
-        # Return the data as a 2-dimensional array
-        return np.array([data, data]).T
+        # Return the data as a 2-dimensional, contiguous array
+        return np.ascontiguousarray(np.array([data, data]).T)
 
