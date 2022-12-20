@@ -9,5 +9,7 @@ class Memory:
     def read(self, address):
         if address >= 0 and address < len(self.memory):  # Check that the address is within bounds
             return self.memory[address]
+        else:
+            raise IndexError("Memory address out of bounds")
 
 
