@@ -15,9 +15,9 @@ This is a Gameboy emulator written in Python. It allows you to play classic Game
 ## Features
 
 - Accurate emulation of the Gameboy hardware
-- Support for all Gameboy models (Original, Pocket, Color)
-- Save states
-- Gameboy Camera support
+- Support for only the Original Gameboy model
+
+
 
 ## Credits
 
